@@ -1,0 +1,59 @@
+nav{
+    font-size: 21px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+button{
+    position: relative;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        color: white;
+        background-color: black;
+        margin-left: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+}
+
+#addRowButton{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input{
+    border: none;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.col-1{
+  width: 6%;  
+}
+
+.col-2, .col-3, .col-4{
+    width: 18%;  
+}
+
+.col-5{
+    width: 14%;  
+}
+
+.col-6{
+    width: 16%;  
+}
+
+input, #saveBtn{
+    position: relative;
+    width: 98%;  
+}
