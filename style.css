@@ -36,6 +36,7 @@ input{
 table{
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
 }
 
 .col-1{
