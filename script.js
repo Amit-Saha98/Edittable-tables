@@ -49,10 +49,31 @@ let tableData = [];
   saveButton.addEventListener("click", function() {
     const rowId = idCell.getAttribute("data-id");
     const rowIndex = tableData.findIndex(row => row.id === Number(rowId));//for loop to iterate over row
-    tableData[rowIndex].student_name = name.value;
-    tableData[rowIndex].student_roll = roll.value;
-    tableData[rowIndex].subject = subject.value;
-    tableData[rowIndex].marks = marks.value;
+
+    if (name.value!=null) {
+      tableData[rowIndex].student_name = name.value;
+    } else {
+      alert("Please enter a valid Student name ");
+    }
+    
+    if (roll.value!=null) {
+      tableData[rowIndex].student_roll = roll.value;
+    } else {
+      alert("Please enter a valid Student Roll no. a");
+    }
+    
+    if (subject.value!=null) {
+      tableData[rowIndex].subject = subject.value;
+    } else {
+      alert("Please enter a valid Subject ");
+    }
+  
+    if (marks.value!=null) {
+      tableData[rowIndex].marks = marks.value;
+    } else {
+      alert("Please enter a valid marks ");
+    }
+   
      if (markedBy.value.includes("@")) {
       tableData[rowIndex].markedBy = markedBy.value;
     } else {
