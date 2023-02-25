@@ -55,6 +55,7 @@ let tableData = [];
     } 
     else {
       alert("Please enter a valid inputs");
+      return;
     }
     
     if (roll.value!=="") {
@@ -62,6 +63,7 @@ let tableData = [];
     } 
     else {
       alert("Please enter a valid inputs");
+      return;
     }
     
     if (subject.value!=="") {
@@ -69,6 +71,7 @@ let tableData = [];
     } 
     else {
       alert("Please enter a valid inputs");
+      return;
     }
   
     if (marks.value!=="") {
@@ -76,6 +79,7 @@ let tableData = [];
     } 
     else {
       alert("Please enter a valid inputs");
+      return;
     }
    
      if (markedBy.value.includes("@")) {
