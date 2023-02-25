@@ -50,28 +50,32 @@ let tableData = [];
     const rowId = idCell.getAttribute("data-id");
     const rowIndex = tableData.findIndex(row => row.id === Number(rowId));//for loop to iterate over row
 
-    if (name.value!=null) {
+    if (name.value!=="") {
       tableData[rowIndex].student_name = name.value;
-    } else {
-      alert("Please enter a valid Student name ");
+    } 
+    else {
+      alert("Please enter a valid inputs");
     }
     
-    if (roll.value!=null) {
+    if (roll.value!=="") {
       tableData[rowIndex].student_roll = roll.value;
-    } else {
-      alert("Please enter a valid Student Roll no. a");
+    } 
+    else {
+      alert("Please enter a valid inputs");
     }
     
-    if (subject.value!=null) {
+    if (subject.value!=="") {
       tableData[rowIndex].subject = subject.value;
-    } else {
-      alert("Please enter a valid Subject ");
+    } 
+    else {
+      alert("Please enter a valid inputs");
     }
   
-    if (marks.value!=null) {
+    if (marks.value!=="") {
       tableData[rowIndex].marks = marks.value;
-    } else {
-      alert("Please enter a valid marks ");
+    } 
+    else {
+      alert("Please enter a valid inputs");
     }
    
      if (markedBy.value.includes("@")) {
