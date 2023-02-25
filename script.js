@@ -1,4 +1,5 @@
 let tableData = [];
+let check = 1;
 
  function addRowButton() {
   const table = document.getElementById("myTable");
@@ -50,38 +51,17 @@ let tableData = [];
     const rowId = idCell.getAttribute("data-id");
     const rowIndex = tableData.findIndex(row => row.id === Number(rowId));//for loop to iterate over row
 
-    if (name.value!=="") {
+    
+    if (name.value!=="" && roll.value!=="" && subject.value!=="" && marks.value!=="") {
       tableData[rowIndex].student_name = name.value;
-    } 
-    else {
-      alert("Please enter a valid inputs");
-      return;
-    }
-    
-    if (roll.value!=="") {
       tableData[rowIndex].student_roll = roll.value;
-    } 
-    else {
-      alert("Please enter a valid inputs");
-      return;
-    }
-    
-    if (subject.value!=="") {
       tableData[rowIndex].subject = subject.value;
-    } 
-    else {
-      alert("Please enter a valid inputs");
-      return;
-    }
-  
-    if (marks.value!=="") {
       tableData[rowIndex].marks = marks.value;
     } 
     else {
       alert("Please enter a valid inputs");
-      return;
     }
-   
+
      if (markedBy.value.includes("@")) {
       tableData[rowIndex].markedBy = markedBy.value;
     } else {
